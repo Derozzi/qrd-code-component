@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Supermercado+One&display=swap');
+@font-face {
+    font-family: 'lemonMilk';
+    src: url(fonts/lemonMilk/LEMONMILK-Regular.otf);
+}
+
+:root {
+    --project-title-fontfml: 'lemonMilk';
+
+    --background-color: linear-gradient(to bottom, #16222a, #3a6073);
+    --container-bcg-clr: hsl(0, 0%, 100%);
+    --title-fnt-clr: hsl(218, 44%, 22%);
+    --paragraphFontClr : hsl(216, 6%, 33%);
+
+    --footer-bcg-clr: rgb(3, 35, 61);
+    
+    --paragraphFontSize: 15px;
+
+    --font-family: 'Outfit', sans-serif;
+    --font-weigth400: 400;
+    --font-weight700: 700;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: rgb(26, 152, 168);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    font-size: 1.6rem;
+    background-image: var(--background-color);
+    font-family: var(--font-family);
+}
+.project-name {
+    font-family: var(--project-title-fontfml);
+    text-shadow: -3px -2px 40px #433f9294;
+    padding: 0.9375em;
+    color: rgb(26, 152, 168);;  
+}
+p {
+    font-size: var(--paragraphFontSize);
+    text-align: center;
+    color: var(--paragraphFontClr);
+}
+.title {
+    font-size: 2.1rem;
+    text-align: center;
+    color: var(--title-fnt-clr);
+}
+
+.fnt-weight-700 {
+    font-weight: 700;
+}
+.fnt-weight-400 {
+    font-weight: 400;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--container-bcg-clr);
+    width: 18.75em;
+    padding: 0.9375em;
+    gap: 1.25em;
+    border-radius: 15px;
+}
+
+
+img.qr-code-img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    width: calc(100% - 10%);
+    margin-bottom: 0.9375em;
+}
+
+.rodape {
+    background-color: rgb(3, 35, 61);
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+
+/* - Mobile: 375px
+- Desktop: 1440px /*
